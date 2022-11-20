@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!-- locomotive scroll -->
+     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
+     <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/locoScroll.css') }}">
+</head>
+<body>
+    
+    <div data-scroll-container>
+        <div data-scroll-container>
+            <div data-scroll-section>
+                <h1 data-scroll>Hey</h1>
+                <p data-scroll>👋</p>
+            </div>
+            <div style="margin-top: 1000px;" data-scroll-section>
+                <h2 data-scroll data-scroll-speed="1">What's up?</h2>
+                <p data-scroll data-scroll-speed="2">😬</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- locomotive js -->
+    <script src="{{ url_for('static', filename='dist/js/script.js') }}"></script>
+</body>
+</html>
